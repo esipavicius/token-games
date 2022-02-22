@@ -12,15 +12,15 @@ const Explain = () => {
         subHeader = "A section to explain staking";
 
     const explainBlocks: ExplainBlock[] = [
-        {image: "/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"},
-        {image: "/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
-        {image: "/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
+        {image: "/token-games/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"},
+        {image: "/token-games/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
+        {image: "/token-games/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
     ];
 
     return (
         <div className="home-explain">
             <div className="home-explain-left">
-                <img data-src="/images/elixir.png" className="lazyload" alt="Elixir"/>
+                <img data-src="/token-games/images/elixir.png" className="lazyload" alt="Elixir"/>
             </div>
 
             <div className="home-explain-right">

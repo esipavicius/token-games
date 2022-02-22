@@ -10,7 +10,7 @@ const TopSidebar = () => {
     return (
         <div className="home-menu">
             <div className="home-menu-left">
-                <img data-src="/images/logo.png" className="lazyload" alt="Token games logo"/>
+                <img data-src="/token-games/images/logo.png" className="lazyload" alt="Token games logo"/>
             </div>
 
             <div className="home-menu-right">

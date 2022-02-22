@@ -10,15 +10,15 @@ type SocialBlock = {
 const Footer = () => {
     const socialBlocks: SocialBlock[] = [
         {
-            image: "/images/logo.png",
+            image: "/token-games/images/logo.png",
             link: "https://google.com",
         },
         {
-            image: "/images/logo.png",
+            image: "/token-games/images/logo.png",
             link: "https://google.com",
         },
         {
-            image: "/images/logo.png",
+            image: "/token-games/images/logo.png",
             link: "https://google.com",
         },
     ];

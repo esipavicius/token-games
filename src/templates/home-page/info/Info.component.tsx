@@ -12,10 +12,10 @@ const Info = () => {
     const header = "SOME BASIC INFO";
 
     const infoBlocks: InfoBlock[] = [
-        {image: "/images/logo.png", text: "OVERALL GOAL: 3.000.000 BTL"},
-        {image: "/images/logo.png", text: "REWARD POOL IS 6.000 USDT"},
-        {image: "/images/logo.png", text: "EVENT DURATION IS 30 DAYS"},
-        {image: "/images/logo.png", text: "FULL LOCK-UP PERIOD"},
+        {image: "/token-games/images/logo.png", text: "OVERALL GOAL: 3.000.000 BTL"},
+        {image: "/token-games/images/logo.png", text: "REWARD POOL IS 6.000 USDT"},
+        {image: "/token-games/images/logo.png", text: "EVENT DURATION IS 30 DAYS"},
+        {image: "/token-games/images/logo.png", text: "FULL LOCK-UP PERIOD"},
     ];
 
     return (

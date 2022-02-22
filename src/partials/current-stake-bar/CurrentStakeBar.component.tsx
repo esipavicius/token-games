@@ -33,25 +33,25 @@ const CurrentStakeBar = () => {
         goals: [
             {
                 name: "GOAL 0",
-                image: "/images/logo.png",
+                image: "/token-games/images/logo.png",
                 scoreFrom: 0,
                 scoreTo: 1000000,
             },
             {
                 name: "GOAL 1",
-                image: "/images/logo.png",
+                image: "/token-games/images/logo.png",
                 scoreFrom: 1000000,
                 scoreTo: 2000000,
             },
             {
                 name: "GOAL 2",
-                image: "/images/logo.png",
+                image: "/token-games/images/logo.png",
                 scoreFrom: 2000000,
                 scoreTo: 3000000,
             },
             {
                 name: "MAIN GOAL",
-                image: "/images/logo.png",
+                image: "/token-games/images/logo.png",
                 scoreFrom: 3000000,
                 scoreTo: 4000000,
             },
