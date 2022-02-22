@@ -1,0 +1,63 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/color.variables";
+@import "./../../../assets/scss/font.variables";
+
+.#{$gridHomeExplainName} {
+  display: flex;
+
+  &-left {
+    justify-content: flex-start;
+    width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-right {
+    width: 40%;
+    margin-left: auto;
+
+    &-header {
+      @include small-header;
+    }
+
+    &-sub-header {
+      @include medium-header;
+    }
+
+    &-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0;
+      }
+
+      &-image {
+        width: 8%;
+        margin-right: 6%;
+        justify-content: start;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-text {
+        width: 85%;
+        justify-content: end;
+
+        p {
+          margin: 0;
+          color: $fontColorWhite;
+          font-size: $fontMediumSize;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

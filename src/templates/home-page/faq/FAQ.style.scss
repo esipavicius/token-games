@@ -1,0 +1,51 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/font.variables";
+@import "./../../../assets/scss/color.variables";
+
+.#{$gridHomeFAQName} {
+  background-color: $colorFAQPage;
+
+  &-header {
+    @include medium-header;
+  }
+
+  &-wrapper {
+    display: inline-flex;
+    width: 100%;
+
+    &-left {
+      width: 65%;
+    }
+
+    &-right {
+      width: 31%;
+      position: relative;
+
+      & > div {
+        position: absolute;
+        bottom: -45px;
+      }
+    }
+
+    &-list {
+      list-style-type: none;
+      padding: 0;
+      color: $fontColorWhite;
+
+      li {
+        margin-bottom: 35px;
+      }
+
+      &-question {
+        font-size: $fontLargeSize;
+        font-weight: bold;
+      }
+
+      &-answer {
+        font-size: $fontLargeSize;
+        font-style: italic;
+        margin-top: 5px;
+      }
+    }
+  }
+}

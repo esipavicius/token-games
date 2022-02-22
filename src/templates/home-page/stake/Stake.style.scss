@@ -1,0 +1,38 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/color.variables";
+@import "./../../../assets/scss/font.variables";
+
+.current-stake-bar {
+  background-color: $colorPurple;
+  padding: 40px 25px;
+
+  &-header {
+    display: inline-flex;
+    width: 100%;
+
+    h1 {
+      display: inline-flex;
+      align-items: flex-start;
+      width: 50%;
+      padding-left: 50px;
+      text-transform: uppercase;
+
+      @include small-header;
+    }
+
+    span {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 50%;
+      font-size: $fontLargeSizeXL;
+      font-weight: 300;
+      padding-right: 50px;
+    }
+  }
+
+  &-footer {
+    text-align: center;
+    text-decoration: underline;
+    font-size: $fontLargeSize;
+  }
+}

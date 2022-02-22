@@ -1,0 +1,23 @@
+$fontHeaderSize: 60px;
+$fontDefaultSize: 12px;
+$fontMediumSize: 14px;
+$fontLargeSize: 18px;
+$fontLargeSizeL: 34px;
+$fontLargeSizeXL: 36px;
+
+$fontColorWhite: #FFF;
+$fontColorBlack: #000;
+
+@mixin small-header {
+  color: $fontColorWhite;
+  font-size: $fontMediumSize;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+@mixin medium-header {
+  color: $fontColorWhite;
+  font-size: $fontLargeSizeXL;
+  font-weight: bolder;
+}

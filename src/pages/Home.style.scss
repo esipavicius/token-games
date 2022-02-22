@@ -1,0 +1,100 @@
+@import "./../assets/scss/color.variables";
+@import "./../assets/scss/grid.variables";
+
+$homePageMinWidth: 768px;
+$homePageMaxWidth: 1140px;
+$homeGridSpacing: 50px 0;
+
+#home-page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        '#{$gridHomeMenuName}'
+        '#{$gridHomeHeaderName}'
+        '#{$gridHomeStakeName}'
+        '#{$gridHomeInfoName}'
+        '#{$gridHomeExplainName}'
+        '#{$gridHomeHowWorksName}'
+        '#{$gridHomeFAQName}'
+        '#{$gridHomeFooterName}';
+}
+
+#home-page > ##{$gridHomeMenuName} {
+    grid-area: #{$gridHomeMenuName};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeHeaderName} {
+    grid-area: #{$gridHomeHeaderName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeStakeName} {
+    grid-area: #{$gridHomeStakeName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeInfoName} {
+    grid-area: #{$gridHomeInfoName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeExplainName} {
+    grid-area: #{$gridHomeExplainName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeHowWorksName} {
+    grid-area: #{$gridHomeHowWorksName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeFAQName} {
+    background-color: $colorFAQPage;
+    grid-area: #{$gridHomeFAQName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}
+
+#home-page > ##{$gridHomeFooterName} {
+    grid-area: #{$gridHomeFooterName};
+    margin: #{$homeGridSpacing};
+
+    & > div {
+        width: $homePageMaxWidth;
+        margin: auto;
+    }
+}

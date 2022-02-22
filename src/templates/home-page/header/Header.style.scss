@@ -1,0 +1,34 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/color.variables";
+@import "./../../../assets/scss/font.variables";
+
+.#{$gridHomeHeaderName} {
+  display: flex;
+  align-items: center;
+  padding: 75px 0;
+
+  &-left {
+    justify-content: start;
+    padding-left: 5%;
+    width: 50%;
+
+    span {
+      font-size: $fontHeaderSize;
+      color: $fontColorWhite;
+    }
+
+    p {
+      font-size: $fontDefaultSize;
+      color: $fontColorWhite;
+      font-weight: bolder;
+    }
+  }
+
+  &-right {
+    width: 40%;
+    justify-content: end;
+    text-align: right;
+    height: 100%;
+    padding-right: 5%;
+  }
+}

@@ -1,0 +1,29 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/font.variables";
+
+.#{$gridHomeInfoName} {
+  text-align: center;
+
+  &-header {
+    @include small-header;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    &-container {
+      display: flex;
+      margin: 0 20px 0 0;
+      flex: 1 0 calc(1/4*100% - (1 - 1/4)*20px);
+      text-align: left;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

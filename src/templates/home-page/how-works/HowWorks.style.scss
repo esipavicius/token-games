@@ -1,0 +1,11 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/font.variables";
+
+.#{$gridHomeHowWorksName} {
+  text-align: center;
+  color: $fontColorWhite;
+
+  &-header {
+    @include small-header;
+  }
+}

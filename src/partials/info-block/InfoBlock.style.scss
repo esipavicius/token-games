@@ -1,0 +1,28 @@
+@import "./../../assets/scss/font.variables";
+@import "./../../assets/scss/color.variables";
+
+.info-block {
+  display: inline-flex;
+  width: 100%;
+  background-color: $colorWhite;
+  border-radius: 5px;
+  padding: 20px 15px;
+  justify-content: center;
+
+  &-image {
+    width: 15%;
+    padding-right: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-text {
+    margin: auto 0;
+    font-size: $fontDefaultSize;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $colorTextPurple;
+  }
+}
