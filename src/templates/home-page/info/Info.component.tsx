@@ -1,21 +1,16 @@
 import "./Info.style.scss";
 
 import React from "react";
-import InfoBlock from "../../../partials/info-block/InfoBlock.component";
-
-type InfoBlock = {
-    image: string;
-    text: string;
-}
+import InfoBlock, { Props as InfoBlockProps } from "../../../partials/info-block/InfoBlock.component";
 
 const Info = () => {
     const header = "SOME BASIC INFO";
 
-    const infoBlocks: InfoBlock[] = [
-        {image: "/token-games/images/logo.png", text: "OVERALL GOAL: 3.000.000 BTL"},
-        {image: "/token-games/images/logo.png", text: "REWARD POOL IS 6.000 USDT"},
-        {image: "/token-games/images/logo.png", text: "EVENT DURATION IS 30 DAYS"},
-        {image: "/token-games/images/logo.png", text: "FULL LOCK-UP PERIOD"},
+    const infoBlocks: InfoBlockProps[] = [
+        {image: "/images/path.png", text: "OVERALL GOAL: 3.000.000 BTL"},
+        {image: "/images/po.png", text: "REWARD POOL IS 6.000 USDT"},
+        {image: "/images/circles.png", text: "EVENT DURATION IS 30 DAYS"},
+        {image: "/images/secure.png", text: "FULL LOCK-UP PERIOD"},
     ];
 
     return (
@@ -24,7 +19,7 @@ const Info = () => {
 
             <div className="home-info-wrapper">
                 {
-                    infoBlocks.map((infoBlock: InfoBlock, index: number) => {
+                    infoBlocks.map((infoBlock: InfoBlockProps, index: number) => {
                         return (
                             <div
                                 key={ `explain-list-${index}` }

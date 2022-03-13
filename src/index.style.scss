@@ -1,4 +1,13 @@
 @import '~react-toastify/scss/main';
+@import './assets/scss/color.variables';
+
+:root {
+  --color-light-purple: #{$colorLightPurple};
+  --color-dark-purple: #{$colorDarkPurple};
+
+  --main-bg-color: var(--color-light-purple);
+  --main-bg-color2: var(--color-dark-purple);
+}
 
 body {
   margin: 0;
@@ -7,11 +16,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("~/public/images/background.jpg");
+  background-image: linear-gradient(var(--main-bg-color), var(--main-bg-color2));
   background-size: cover;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

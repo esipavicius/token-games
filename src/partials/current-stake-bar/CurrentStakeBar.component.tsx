@@ -1,19 +1,7 @@
 import "./CurrentStakeBar.style.scss";
 
 import React, { useState, useEffect } from "react";
-import StakeBar from "../stake-bar/StakeBar.component";
-
-interface StakeBarGoal {
-    name: string;
-    image: string;
-    scoreFrom: number;
-    scoreTo: number;
-}
-
-interface StakeBarProps {
-    currentScore: number;
-    goals: StakeBarGoal[];
-}
+import StakeBar, { Props as StakeBarProps } from "../stake-bar/StakeBar.component";
 
 const CurrentStakeBar = () => {
     const header = "CURRENTLY STAKED",
@@ -33,25 +21,25 @@ const CurrentStakeBar = () => {
         goals: [
             {
                 name: "GOAL 0",
-                image: "/token-games/images/logo.png",
+                image: "/images/logo.png",
                 scoreFrom: 0,
                 scoreTo: 1000000,
             },
             {
                 name: "GOAL 1",
-                image: "/token-games/images/logo.png",
+                image: "/images/logo.png",
                 scoreFrom: 1000000,
                 scoreTo: 2000000,
             },
             {
                 name: "GOAL 2",
-                image: "/token-games/images/logo.png",
+                image: "/images/logo.png",
                 scoreFrom: 2000000,
                 scoreTo: 3000000,
             },
             {
                 name: "MAIN GOAL",
-                image: "/token-games/images/logo.png",
+                image: "/images/logo.png",
                 scoreFrom: 3000000,
                 scoreTo: 4000000,
             },

@@ -321,7 +321,7 @@ const Diagram = () => {
                     <foreignObject
                         id="info2header"
                         data-id={2}
-                        x="56"
+                        x="50"
                         y="172"
                         width="70"
                         height="20"
@@ -371,7 +371,7 @@ const Diagram = () => {
                     <foreignObject
                         id="info4header"
                         data-id={4}
-                        x="144"
+                        x="138"
                         y="172"
                         width="70"
                         height="20"

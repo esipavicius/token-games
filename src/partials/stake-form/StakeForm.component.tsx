@@ -33,7 +33,7 @@ class StakeForm extends React.Component {
                     </div>
 
                     <div className="stake-form-header-right">
-                        <img data-src="/token-games/images/logo.png" className="lazyload" alt="Token games logo"/>
+                        <img data-src={ process.env.PUBLIC_URL + '/images/logo.svg' } className="lazyload" alt="Token games logo"/>
                     </div>
                 </div>
 

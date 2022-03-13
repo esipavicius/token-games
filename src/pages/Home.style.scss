@@ -9,18 +9,18 @@ $homeGridSpacing: 50px 0;
     display: grid;
     width: 100%;
     grid-template-areas:
-        '#{$gridHomeMenuName}'
+        '#{$gridMenuName}'
         '#{$gridHomeHeaderName}'
         '#{$gridHomeStakeName}'
         '#{$gridHomeInfoName}'
         '#{$gridHomeExplainName}'
         '#{$gridHomeHowWorksName}'
         '#{$gridHomeFAQName}'
-        '#{$gridHomeFooterName}';
+        '#{$gridFooterName}';
 }
 
-#home-page > ##{$gridHomeMenuName} {
-    grid-area: #{$gridHomeMenuName};
+#home-page > ##{$gridMenuName} {
+    grid-area: #{$gridMenuName};
 
     & > div {
         width: $homePageMaxWidth;
@@ -89,8 +89,8 @@ $homeGridSpacing: 50px 0;
     }
 }
 
-#home-page > ##{$gridHomeFooterName} {
-    grid-area: #{$gridHomeFooterName};
+#home-page > ##{$gridFooterName} {
+    grid-area: #{$gridFooterName};
     margin: #{$homeGridSpacing};
 
     & > div {

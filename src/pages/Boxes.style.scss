@@ -1,0 +1,51 @@
+@import "./../assets/scss/color.variables";
+@import "./../assets/scss/grid.variables";
+
+#boxes-page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        '#{$gridMenuName}'
+        '#{$gridBoxesHeaderName}'
+        '#{$gridBoxesListName}'
+        '#{$gridFooterName}';
+}
+
+#boxes-page > ##{$gridMenuName} {
+    grid-area: #{$gridMenuName};
+
+    & > div {
+        width: $pageMaxWidth;
+        margin: auto;
+    }
+}
+
+#boxes-page > ##{$gridBoxesHeaderName} {
+    grid-area: #{$gridBoxesHeaderName};
+    margin: #{$gridSpacing};
+
+    & > div {
+        width: $pageMaxWidth;
+        margin: auto;
+    }
+}
+
+#boxes-page > ##{$gridBoxesListName} {
+    grid-area: #{$gridBoxesListName};
+    margin: #{$gridSpacing};
+
+    & > div {
+        width: $pageMaxWidth;
+        margin: auto;
+    }
+}
+
+#boxes-page > ##{$gridFooterName} {
+    grid-area: #{$gridFooterName};
+    margin: #{$gridSpacing};
+
+    & > div {
+        width: $pageMaxWidth;
+        margin: auto;
+    }
+}

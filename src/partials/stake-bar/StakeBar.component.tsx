@@ -16,7 +16,7 @@ interface StakeBarProgress {
     goal: StakeBarGoal;
 }
 
-interface Props {
+export interface Props {
     currentScore: number;
     goals: StakeBarGoal[];
 }

@@ -1,0 +1,63 @@
+@import "./../../../assets/scss/grid.variables";
+@import "./../../../assets/scss/color.variables";
+@import "./../../../assets/scss/font.variables";
+
+.#{$gridBoxesListName} {
+  text-align: center;
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+
+    &-container {
+      text-align: left;
+      margin-bottom: 25px;
+      width: 23%;
+      margin-right: 2%;
+    }
+  }
+
+  &-table-wrapper {
+    margin-top: 100px;
+    background-color: $colorSoftPurple;
+    padding: 40px;
+    font-size: $fontMediumSize;
+
+    table {
+      color: $colorWhite;
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        tr {
+          th:first-child {
+            text-align: left;
+          }
+
+          th {
+            text-align: center;
+          }
+        }
+      }
+
+      tbody {
+        font-weight: bolder;
+        font-size: $fontDefaultSize;
+
+        tr {
+          td:first-child {
+            text-align: left;
+          }
+
+          td {
+            padding-top: 25px;
+            text-align: center;
+            border-bottom: solid 1px $colorWhite;
+          }
+        }
+      }
+    }
+  }
+}

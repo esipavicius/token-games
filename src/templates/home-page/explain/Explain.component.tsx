@@ -12,15 +12,15 @@ const Explain = () => {
         subHeader = "A section to explain staking";
 
     const explainBlocks: ExplainBlock[] = [
-        {image: "/token-games/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"},
-        {image: "/token-games/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
-        {image: "/token-games/images/logo.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
+        {image: "/images/bit.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"},
+        {image: "/images/secure.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
+        {image: "/images/aim.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
     ];
 
     return (
         <div className="home-explain">
             <div className="home-explain-left">
-                <img data-src="/token-games/images/elixir.png" className="lazyload" alt="Elixir"/>
+                <img data-src={ process.env.PUBLIC_URL + '/images/elixir.png' } className="lazyload" alt="Elixir"/>
             </div>
 
             <div className="home-explain-right">
@@ -34,7 +34,7 @@ const Explain = () => {
                             return (
                                 <li key={ `explain-list-${index}` }>
                                     <div className="home-explain-right-list-image">
-                                        <img data-src={ explainBlock.image } className="lazyload" alt={ explainBlock.text }/>
+                                        <img data-src={ process.env.PUBLIC_URL + explainBlock.image } className="lazyload" alt={ explainBlock.text }/>
                                     </div>
 
                                     <div className="home-explain-right-list-text">

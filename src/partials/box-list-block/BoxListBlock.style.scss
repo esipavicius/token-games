@@ -1,0 +1,81 @@
+@import "./../../assets/scss/font.variables";
+@import "./../../assets/scss/color.variables";
+
+.box-list-block {
+  width: 100%;
+  background-color: $colorWhite;
+  border-radius: 2px;
+
+  &-header {
+    background-color: $colorFAQPage;
+    color: $colorWhite;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  &-image {
+    padding: 30px;
+    background-color: $colorLightPurple;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-available, &-value, &-key {
+    color: $fontColorBlack;
+    display: inline-flex;
+    width: 100%;
+
+    &-left {
+      width: 60%;
+      text-align: left;
+      font-size: $fontDefaultSize;
+      font-weight: bold;
+      text-decoration: underline;
+      padding: 15px;
+    }
+
+    &-right {
+      justify-content: flex-end;
+      font-size: $fontDefaultSize;
+      width: 40%;
+      text-align: right;
+      padding: 15px;
+    }
+  }
+
+  &-key {
+    &-left {
+      padding-top: 0;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &-right {
+      padding-top: 0;
+
+      img {
+        width: 17px;
+      }
+    }
+  }
+
+  &-button {
+    padding: 15px;
+
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      background-color: $colorLightPurple;
+      color: $fontColorWhite;
+      font-size: $fontDefaultSize;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
+}

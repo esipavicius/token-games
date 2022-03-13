@@ -4,7 +4,7 @@ import "./StakeTimer.style.scss";
 import React from "react";
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 
-interface Props {
+export interface Props {
     timeInSeconds: number;
     timeEndsCallback: Function | null;
 }

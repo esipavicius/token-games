@@ -88,7 +88,7 @@ class StakeBarProgress extends React.Component {
                 <div className="stake-bar-progress-left">
                     { this.renderGoalHeader() }
 
-                    <img data-src={ this.goal.image } className="lazyload" alt="Token games logo"/>
+                    <img data-src={ process.env.PUBLIC_URL + this.goal.image } className="lazyload" alt="Token games logo"/>
                 </div>
 
                 <div className="stake-bar-progress-right">

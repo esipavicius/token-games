@@ -1,12 +1,7 @@
 import "./Header.style.scss";
 
 import React from "react";
-import StakeTimer from "../../../partials/stake-timer/StakeTimer.component";
-
-interface StakeTimerProps {
-    timeInSeconds: number;
-    timeEndsCallback: Function | null;
-}
+import StakeTimer, { Props as StakeTimerProps } from "../../../partials/stake-timer/StakeTimer.component";
 
 const Header = () => {
     const stateTimerProps: StakeTimerProps = {

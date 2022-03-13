@@ -1,8 +1,16 @@
-$gridHomeMenuName: 'home-menu';
+$gridMenuName: 'menu';
+$gridFooterName: 'footer';
+
 $gridHomeHeaderName: 'home-header';
 $gridHomeStakeName: 'home-stake';
 $gridHomeInfoName: 'home-info';
 $gridHomeExplainName: 'home-explain';
 $gridHomeHowWorksName: 'home-how-works';
 $gridHomeFAQName: 'home-faq';
-$gridHomeFooterName: 'home-footer';
+
+$gridBoxesHeaderName: 'boxes-header';
+$gridBoxesListName: 'boxes-list';
+
+$pageMinWidth: 768px;
+$pageMaxWidth: 1140px;
+$gridSpacing: 50px 0;

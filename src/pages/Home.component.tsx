@@ -2,19 +2,19 @@ import "./Home.style.scss";
 
 import React from "react";
 
-import TopSidebar from "../templates/home-page/top-sidebar/TopSidebar.component";
+import TopSidebar from "../templates/top-sidebar/TopSidebar.component";
 import Header from "../templates/home-page/header/Header.component";
 import Stake from "../templates/home-page/stake/Stake.component";
 import Info from "../templates/home-page/info/Info.component";
 import Explain from "../templates/home-page/explain/Explain.component";
 import HowWorks from "../templates/home-page/how-works/HowWorks.component";
 import FAQ from "../templates/home-page/faq/FAQ.component";
-import Footer from "../templates/home-page/footer/Footer.component";
+import Footer from "../templates/footer/Footer.component";
 
 const HomePage = () => {
     return (
         <section id="home-page">
-            <nav id="home-menu">
+            <nav id="menu">
                 <TopSidebar />
             </nav>
 
@@ -42,7 +42,7 @@ const HomePage = () => {
                 <FAQ />
             </div>
 
-            <footer id="home-footer">
+            <footer id="footer">
                 <Footer />
             </footer>
         </section>
