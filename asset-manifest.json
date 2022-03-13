@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/token-games/static/css/main.0fc57fee.css",
-    "main.js": "/token-games/static/js/main.a9f25129.js",
+    "main.js": "/token-games/static/js/main.37a70eb8.js",
     "static/css/263.1411eb46.chunk.css": "/token-games/static/css/263.1411eb46.chunk.css",
     "static/js/263.9b6997a4.chunk.js": "/token-games/static/js/263.9b6997a4.chunk.js",
     "static/css/467.e555c77e.chunk.css": "/token-games/static/css/467.e555c77e.chunk.css",
     "static/js/467.edc4d9bf.chunk.js": "/token-games/static/js/467.edc4d9bf.chunk.js",
     "index.html": "/token-games/index.html",
     "main.0fc57fee.css.map": "/token-games/static/css/main.0fc57fee.css.map",
-    "main.a9f25129.js.map": "/token-games/static/js/main.a9f25129.js.map",
+    "main.37a70eb8.js.map": "/token-games/static/js/main.37a70eb8.js.map",
     "263.1411eb46.chunk.css.map": "/token-games/static/css/263.1411eb46.chunk.css.map",
     "263.9b6997a4.chunk.js.map": "/token-games/static/js/263.9b6997a4.chunk.js.map",
     "467.e555c77e.chunk.css.map": "/token-games/static/css/467.e555c77e.chunk.css.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.0fc57fee.css",
-    "static/js/main.a9f25129.js"
+    "static/js/main.37a70eb8.js"
   ]
 }
