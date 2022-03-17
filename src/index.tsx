@@ -2,7 +2,7 @@ import './index.style.scss';
 import 'lazysizes';
 
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import ReactDOM from 'react-dom';
 import {ToastContainer} from "react-toastify";
 import { changeBackgroundDarkToLight, changeBackgroundLightToDark} from './config/helper';
@@ -22,12 +22,13 @@ const LazyBoxesPage = React.lazy(() => {
 
 ReactDOM.render(
     <React.Suspense fallback={<>Loading...</>}>
-        <BrowserRouter>
-            <Routes>
-                <Route path={ ROUTES.HOME.ROUTE } element={ <LazyHomePage /> } />
-                <Route path={ ROUTES.BOXES.ROUTE } element={ <LazyBoxesPage /> } />
-            </Routes>
-        </BrowserRouter>
+        <HashRouter basename={ ROUTES.HOME.ROUTE } >
+            <LazyHomePage />
+        </HashRouter>
+
+        <HashRouter basename={ ROUTES.BOXES.ROUTE } >
+            <LazyBoxesPage />
+        </HashRouter>
 
         <ToastContainer/>
     </React.Suspense>,

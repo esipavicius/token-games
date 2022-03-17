@@ -7,16 +7,11 @@ const Header = () => {
         <div className="boxes-header">
             <div className="boxes-header-left">
                 <span>
-                    Lorem ipsum dolor
+                    Enough Keys in Your Possession? Unlock the Rewards Treasure Chests!
                 </span>
 
                 <p>
-                    Wether you are an expert or a beginner.Bit is going to become the first platform which will
-                    faster all your needs in a simple, easy and intuotive way intuotive way.
-                    Wether you are an expert or a beginner.Bit is going to become the first platform which will
-                    faster all your needs in a simple, easy and intuotive way intuotive way.
-                    Wether you are an expert or a beginner.Bit is going to become the first platform which will
-                    faster all your needs in a simple, easy and intuotive way intuotive way.
+                    Collect the gold and silver keys by engaging in the Token Games staking and open up the treasure chests full of exclusive rewards in the Token Games Treasury!
                 </p>
             </div>
 

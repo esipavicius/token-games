@@ -1,8 +1,8 @@
 export default {
     HOME: {
-        ROUTE: '/token-games/',
+        ROUTE: '/home-page',
     },
     BOXES: {
-        ROUTE: '/token-games/boxes/',
+        ROUTE: '/boxes-page',
     },
 }

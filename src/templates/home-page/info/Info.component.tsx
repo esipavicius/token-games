@@ -4,13 +4,13 @@ import React from "react";
 import InfoBlock, { Props as InfoBlockProps } from "../../../partials/info-block/InfoBlock.component";
 
 const Info = () => {
-    const header = "SOME BASIC INFO";
+    const header = "The basics";
 
     const infoBlocks: InfoBlockProps[] = [
-        {image: "/images/path.png", text: "OVERALL GOAL: 3.000.000 BTL"},
-        {image: "/images/po.png", text: "REWARD POOL IS 6.000 USDT"},
-        {image: "/images/circles.png", text: "EVENT DURATION IS 30 DAYS"},
-        {image: "/images/secure.png", text: "FULL LOCK-UP PERIOD"},
+        {image: "/images/path.png", text: "The ultimate goal of 3,000,000 BTL"},
+        {image: "/images/po.png", text: "Reward pool of 6,000 USDT"},
+        {image: "/images/circles.png", text: "30-day staking event"},
+        {image: "/images/secure.png", text: "30-day lock-up period"},
     ];
 
     return (

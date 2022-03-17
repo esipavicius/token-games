@@ -4,7 +4,7 @@ import React from "react";
 import Diagram from "./Diagram";
 
 const HowWorks = () => {
-    const header = "HOW TO IT WORKS";
+    const header = "How does the Token Games work?";
 
     return (
         <div className="home-how-works">

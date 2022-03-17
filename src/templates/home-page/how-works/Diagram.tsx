@@ -3,31 +3,31 @@ import React, { useState } from "react";
 const Diagram = () => {
     const tree = [
         {
-            header: 'Lorem ipsum dolor sit amet, consectetur',
-            fillerText: 'FILLER TEXT INSERTED',
-            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+            header: 'Stake BTL tokens and generate the adventure keys.',
+            fillerText: 'Stake tokens',
+            description: 'Stake BTL tokens - lock up your assets for a certain amount of time to get the silver and gold keys.',
         },
         {
-            header: 'Lorem ipsum dolor sit amet,',
-            fillerText: 'FILLER TEXT INSERTED2',
-            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+            header: 'Contribute to the common goal by participating in the key adventure, and get a chance to win a prize with every milestone.',
+            fillerText: 'Reach milestones',
+            description: ' By participating in the Tokens Games key adventure you contribute towards the achievement of the common community goal - 3,000,000 BTL tokens staked. You also have a chance of winning a 2,000 USD prize with every milestone along the way.',
         },
         {
-            header: 'Lorem ipsum dolor sit amet, consectetur',
-            fillerText: 'FILLER TEXT INSERTED3',
-            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+            header: 'Collect the gold and silver keys that will open up the treasure chests.',
+            fillerText: 'Collect keys',
+            description: 'Generate the adventure keys - get the silver key for the time period you stake your tokens for (1 silver key for every 4 days staked) and the gold key for the number of tokens you stake (1 golden key for every 50,000 BTL staked).',
         },
         {
-            header: 'Lorem ipsum dolor sit amet,',
-            fillerText: 'FILLER TEXT INSERTED4',
-            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+            header: 'Once you’ve collected a certain amount of keys, open up one of the treasure chests to find a number of exclusive rewards.',
+            fillerText: 'Open chests',
+            description: 'Unlock the treasure chests with a certain amount of keys - 1 silver key for Box A, 10 silver keys for Box B, 1 gold key for Box C, or 5 gold keys for Box D. Every treasure box contains a certain amount of rewards.',
         },
     ];
 
     const fillerTextWrapperStyle = { display: "flex", justifyContent: "center" },
         fillerTextStyle = { fontSize: "3px", color: "#a296c6", fontWeight: "bold" },
         fillerHeaderWrapperStyle = { display: "flex", textAlign: "left" as "left", cursor: "pointer" },
-        fillerHeaderStyle = { fontSize: "5px", color: "#FFF" };
+        fillerHeaderStyle = { fontSize: "4px", color: "#FFF" };
 
     const info1currentShowStyle = { fillOpacity:"0", stroke:"#ffffff", strokeWidth:"0.4", display: "none" },
         info2currentShowStyle = { fillOpacity:"0", stroke:"#ffffff", strokeWidth:"0.4", display: "none" },
@@ -321,7 +321,7 @@ const Diagram = () => {
                     <foreignObject
                         id="info2header"
                         data-id={2}
-                        x="50"
+                        x="44"
                         y="172"
                         width="70"
                         height="20"
@@ -371,7 +371,7 @@ const Diagram = () => {
                     <foreignObject
                         id="info4header"
                         data-id={4}
-                        x="138"
+                        x="132"
                         y="172"
                         width="70"
                         height="20"

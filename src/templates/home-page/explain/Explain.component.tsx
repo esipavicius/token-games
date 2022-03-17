@@ -8,13 +8,13 @@ type ExplainBlock = {
 }
 
 const Explain = () => {
-    const header = "WHAT IS STAKING",
-        subHeader = "A section to explain staking";
+    const header = "What is staking?",
+        subHeader = "Your go-to guide to staking";
 
     const explainBlocks: ExplainBlock[] = [
-        {image: "/images/bit.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"},
-        {image: "/images/secure.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
-        {image: "/images/aim.png", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u"},
+        {image: "/images/bit.png", text: "Staking is the process involving locking up some of your crypto assets for a certain period of time."},
+        {image: "/images/secure.png", text: "By staking your crypto assets, you contribute to the overall goal of reaching 3,000,000  of staked BTL tokens. And, with every milestone reached you get a chance to win a prize of 2,000 USD!"},
+        {image: "/images/aim.png", text: "Staking is a way of putting your assets to work and earning some extra rewards in the process."},
     ];
 
     return (

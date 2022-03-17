@@ -13,16 +13,16 @@ const FAQ = () => {
 
     const faqBlocks: FAQBlock[] = [
         {
-            question: "Lorem ipsum dolor sit amet, consectetur? adipiscing elit, sed do eiusmod tempor",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            question: "How can I participate?",
+            answer: "Connect your crypto wallet to the Tokens Games platform, stake your BTL tokens and collect your keys to open the treasure boxes.",
         },
         {
-            question: "Lorem ipsum dolor sit amet, consectetur? adipiscing elit, sed do eiusmod tempor",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            question: "What kind of keys are there and how to get them?",
+            answer: "There are two types of keys - silver and gold. Collect the adventure keys by staking your BTL tokens - get the silver key for the time period you stake your tokens for (1 silver key for every 4 days staked) and the gold key for the number of tokens you stake (1 golden key for every 50,000 BTL staked).",
         },
         {
-            question: "Lorem ipsum dolor sit amet, consectetur? adipiscing elit, sed do eiusmod tempor",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            question: "What are the treasure boxes?",
+            answer: "The treasure boxes are the special reward boxes containing a certain amount of BTL tokens - ranging from 100 to 5000. You can open up the boxes with the keys - 1 silver key to open Box A, 10 silver keys for Box B, 1 gold key for Box C, or 5 gold keys for Box D. There is a limited amount of treasure boxes released.",
         },
     ];
 

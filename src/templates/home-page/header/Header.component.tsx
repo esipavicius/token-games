@@ -15,17 +15,11 @@ const Header = () => {
         <div className="home-header">
             <div className="home-header-left">
                 <span>
-                    Lorem ipsum dolor
-                    <br/>
-                    sit amet
+                    Stake BTL and Hold the Keys to Exclusive Rewards
                 </span>
 
                 <p>
-                    Wether you are an expert or a beginner.Bit is going to become the
-                    <br/>
-                    first platform which will faster all your needs in a simple, easy and
-                    <br/>
-                    intuotive way
+                    Participate in the Tokens Games key adventure! Stake BTL tokens and collect the keys that will open up the treasure boxes filled with exclusive rewards.
                 </p>
             </div>
 
