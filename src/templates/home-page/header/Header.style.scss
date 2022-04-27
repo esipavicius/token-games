@@ -1,20 +1,36 @@
 @import "./../../../assets/scss/grid.variables";
 @import "./../../../assets/scss/color.variables";
 @import "./../../../assets/scss/font.variables";
+@import "./../../../assets/scss/breakpoints.variables";
 
 .#{$gridHomeHeaderName} {
-  display: flex;
   align-items: center;
-  padding: 75px 0;
+  padding: 25px 0;
+
+  @include breakpoint(tablet) {
+    display: flex;
+    padding: 75px 0;
+  }
 
   &-left {
     justify-content: start;
-    padding-left: 5%;
-    width: 50%;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      text-align: left;
+      padding-left: 5%;
+      width: 50%;
+    }
 
     span {
-      font-size: $fontHeaderSize;
+      font-size: $fontLargeSizeXL;
       color: $fontColorWhite;
+
+      @include breakpoint(tablet) {
+        font-size: $fontHeaderSize;
+      }
     }
 
     p {
@@ -25,10 +41,17 @@
   }
 
   &-right {
-    width: 40%;
+    width: 100%;
     justify-content: end;
-    text-align: right;
+    text-align: center;
     height: 100%;
     padding-right: 5%;
+    margin-top: 50px;
+
+    @include breakpoint(tablet) {
+      margin-top: 0;
+      width: 40%;
+      text-align: right;
+    }
   }
 }

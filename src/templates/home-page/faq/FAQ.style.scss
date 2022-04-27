@@ -1,29 +1,55 @@
 @import "./../../../assets/scss/grid.variables";
 @import "./../../../assets/scss/font.variables";
 @import "./../../../assets/scss/color.variables";
+@import "./../../../assets/scss/breakpoints.variables";
 
 .#{$gridHomeFAQName} {
   background-color: $colorFAQPage;
 
   &-header {
     @include medium-header;
+    text-align: center;
+    font-size: $fontLargeSizeM;
+
+    @include breakpoint(tablet) {
+      @include medium-header;
+      text-align: left;
+    }
   }
 
   &-wrapper {
-    display: inline-flex;
     width: 100%;
 
+    @include breakpoint(tablet) {
+      display: inline-flex;
+    }
+
     &-left {
-      width: 65%;
+      width: 100%;
+      margin-left: 10px;
+
+      @include breakpoint(tablet) {
+        margin-left: unset;
+        width: 65%;
+      }
     }
 
     &-right {
-      width: 31%;
+      width: 100%;
       position: relative;
 
       & > div {
-        position: absolute;
-        bottom: -45px;
+        margin: 50px auto;
+
+        @include breakpoint(tablet) {
+          position: absolute;
+          margin: unset;
+          bottom: -45px;
+        }
+      }
+
+      @include breakpoint(tablet) {
+        width: 31%;
       }
     }
 
@@ -37,14 +63,22 @@
       }
 
       &-question {
-        font-size: $fontLargeSize;
+        font-size: $fontMediumSize;
         font-weight: bold;
+
+        @include breakpoint(tablet) {
+          font-size: $fontLargeSize;
+        }
       }
 
       &-answer {
-        font-size: $fontLargeSize;
+        font-size: $fontMediumSize;
         font-style: italic;
         margin-top: 5px;
+
+        @include breakpoint(tablet) {
+          font-size: $fontLargeSize;
+        }
       }
     }
   }

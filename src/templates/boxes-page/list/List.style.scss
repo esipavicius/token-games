@@ -1,21 +1,31 @@
 @import "./../../../assets/scss/grid.variables";
 @import "./../../../assets/scss/color.variables";
 @import "./../../../assets/scss/font.variables";
+@import "./../../../assets/scss/breakpoints.variables";
 
 .#{$gridBoxesListName} {
   text-align: center;
 
   &-wrapper {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 50px;
 
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+
     &-container {
       text-align: left;
-      margin-bottom: 25px;
-      width: 23%;
-      margin-right: 2%;
+      width: 90%;
+      margin: auto;
+      padding-bottom: 20px;
+
+      @include breakpoint(tablet) {
+        width: 23%;
+        margin: 0 2% 25px 0;
+        padding-bottom: unset;
+      }
     }
   }
 

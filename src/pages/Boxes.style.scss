@@ -1,5 +1,6 @@
 @import "./../assets/scss/color.variables";
 @import "./../assets/scss/grid.variables";
+@import "./../assets/scss/breakpoints.variables";
 
 #boxes-page {
     display: grid;
@@ -15,37 +16,53 @@
     grid-area: #{$gridMenuName};
 
     & > div {
-        width: $pageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #boxes-page > ##{$gridBoxesHeaderName} {
     grid-area: #{$gridBoxesHeaderName};
-    margin: #{$gridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $pageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #boxes-page > ##{$gridBoxesListName} {
     grid-area: #{$gridBoxesListName};
-    margin: #{$gridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $pageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #boxes-page > ##{$gridFooterName} {
     grid-area: #{$gridFooterName};
-    margin: #{$gridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $pageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }

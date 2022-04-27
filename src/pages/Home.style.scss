@@ -1,9 +1,6 @@
 @import "./../assets/scss/color.variables";
 @import "./../assets/scss/grid.variables";
-
-$homePageMinWidth: 768px;
-$homePageMaxWidth: 1140px;
-$homeGridSpacing: 50px 0;
+@import "./../assets/scss/breakpoints.variables";
 
 #home-page {
     display: grid;
@@ -23,78 +20,110 @@ $homeGridSpacing: 50px 0;
     grid-area: #{$gridMenuName};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridHomeHeaderName} {
     grid-area: #{$gridHomeHeaderName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridHomeStakeName} {
     grid-area: #{$gridHomeStakeName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridHomeInfoName} {
     grid-area: #{$gridHomeInfoName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridHomeExplainName} {
     grid-area: #{$gridHomeExplainName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridHomeHowWorksName} {
     grid-area: #{$gridHomeHowWorksName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridHomeFAQName} {
     background-color: $colorFAQPage;
     grid-area: #{$gridHomeFAQName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }
 
 #home-page > ##{$gridFooterName} {
     grid-area: #{$gridFooterName};
-    margin: #{$homeGridSpacing};
+    margin: #{$gridSpacingMobile};
 
     & > div {
-        width: $homePageMaxWidth;
+        width: 100%;
         margin: auto;
+
+        @include breakpoint(tablet) {
+            width: $pageMaxWidth;
+        }
     }
 }

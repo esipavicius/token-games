@@ -1,11 +1,16 @@
 @import "./../../assets/scss/font.variables";
 @import "./../../assets/scss/color.variables";
+@import "./../../assets/scss/breakpoints.variables";
 
 .stake-form {
   color: $fontColorWhite;
-  width: 60%;
+  width: 90%;
   background-color: $colorWhite;
   margin: 25px auto 0 auto;
+
+  @include breakpoint(tablet) {
+    width: 60%;
+  }
 
   &-header {
     background-color: $colorLightPurple;
@@ -28,8 +33,7 @@
       padding: 15px;
 
       img {
-        width: 25px;
-        height: 25px;
+        width: 100px;
       }
     }
   }

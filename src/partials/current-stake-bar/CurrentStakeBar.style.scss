@@ -1,5 +1,11 @@
 @import "./../../assets/scss/font.variables";
+@import "./../../assets/scss/breakpoints.variables";
 
 .current-stake-bar {
   color: $fontColorWhite;
+  font-size: $fontDefaultSize;
+
+  @include breakpoint(tablet) {
+    font-size: $fontMediumSize;
+  }
 }

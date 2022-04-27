@@ -1,12 +1,19 @@
 @import "./../../assets/scss/font.variables";
 @import "./../../assets/scss/color.variables";
+@import "./../../assets/scss/breakpoints.variables";
 
 .subscribe {
   background-color: $colorPurple;
   color: $fontColorWhite;
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
-  padding: 30px 25px 50px 25px;
+  padding: 30px 0;
+  text-align: center;
+
+  @include breakpoint(tablet) {
+    padding: 30px 25px 50px 25px;
+    width: 100%;
+  }
 
   &-header {
     color: $fontColorWhite;

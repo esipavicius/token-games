@@ -1,20 +1,31 @@
 @import "./../../assets/scss/font.variables";
 @import "./../../assets/scss/color.variables";
+@import "./../../assets/scss/breakpoints.variables";
 
 .info-block {
   display: inline-flex;
   width: 100%;
   background-color: $colorWhite;
   border-radius: 5px;
-  padding: 20px 15px;
-  justify-content: center;
+  padding: 10px 6px;
+
+  @include breakpoint(tablet) {
+    padding: 20px 15px;
+    justify-content: center;
+  }
 
   &-image {
     width: 15%;
     padding-right: 10px;
 
     img {
-      width: 100%;
+      padding-left: 10px;
+      width: 50%;
+
+      @include breakpoint(tablet) {
+        padding-left: unset;
+        width: 100%;
+      }
     }
   }
 

@@ -1,5 +1,6 @@
 @import "./../../assets/scss/font.variables";
 @import "./../../assets/scss/color.variables";
+@import "./../../assets/scss/breakpoints.variables";
 
 .box-list-block {
   width: 100%;
@@ -17,9 +18,18 @@
   &-image {
     padding: 30px;
     background-color: $colorLightPurple;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      text-align: unset;
+    }
 
     img {
-      width: 100%;
+      width: 50%;
+
+      @include breakpoint(tablet) {
+        width: 100%;
+      }
     }
   }
 

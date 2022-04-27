@@ -1,25 +1,45 @@
 @import "./../../../assets/scss/grid.variables";
 @import "./../../../assets/scss/color.variables";
 @import "./../../../assets/scss/font.variables";
+@import "./../../../assets/scss/breakpoints.variables";
 
 .#{$gridHomeExplainName} {
-  display: flex;
+  @include breakpoint(tablet) {
+    display: flex;
+  }
 
   &-left {
-    justify-content: flex-start;
-    width: 40%;
+    display: none;
 
-    img {
-      width: 100%;
+    @include breakpoint(tablet) {
+      display: block;
+      justify-content: flex-start;
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
   &-right {
-    width: 40%;
-    margin-left: auto;
+    width: 100%;
+    padding-left: 20px;
+
+    @include breakpoint(tablet) {
+      padding-left: unset;
+      width: 40%;
+      margin-left: auto;
+    }
 
     &-header {
       @include small-header;
+      text-align: center;
+
+      @include breakpoint(tablet) {
+        text-align: unset;
+        width: 40%;
+      }
     }
 
     &-sub-header {

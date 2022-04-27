@@ -1,5 +1,6 @@
 @import "./../../assets/scss/color.variables";
 @import "./../../assets/scss/font.variables";
+@import "./../../assets/scss/breakpoints.variables";
 
 .stake-bar-progress {
   display: inline-flex;
@@ -9,10 +10,10 @@
     width: 25%;
     display: flex;
     position: relative;
-
+    left: 5px;
+    z-index: 1;
     img {
       border-radius: 100%;
-      background-color: white;
       width: 100%;
     }
 
@@ -21,10 +22,14 @@
       position: absolute;
       white-space: nowrap;
       top: -40px;
-      left: -40px;
+      left: -60px;
       right: 0;
       text-align: center;
       font-weight: bold;
+
+      @include breakpoint(tablet) {
+        left: -40px;
+      }
     }
   }
 

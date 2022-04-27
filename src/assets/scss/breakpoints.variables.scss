@@ -1,0 +1,7 @@
+@import "./grid.variables";
+
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media only screen and (min-width: $pageMinWidth) { @content ; }
+  }
+}

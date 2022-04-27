@@ -1,5 +1,6 @@
 @import "./../../../assets/scss/grid.variables";
 @import "./../../../assets/scss/font.variables";
+@import "./../../../assets/scss/breakpoints.variables";
 
 .#{$gridHomeInfoName} {
   text-align: center;
@@ -16,13 +17,19 @@
     margin-top: 50px;
 
     &-container {
-      display: flex;
-      margin: 0 20px 0 0;
-      flex: 1 0 calc(1/4*100% - (1 - 1/4)*20px);
+      margin: 5px auto;
       text-align: left;
+      width: 90%;
 
-      &:nth-child(4n) {
-        margin-right: 0;
+      @include breakpoint(tablet) {
+        width: unset;
+        display: flex;
+        flex: 1 0 calc(1/4*100% - (1 - 1/4)*20px);
+        margin: 0 20px 0 0;
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
       }
     }
   }
